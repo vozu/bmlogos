@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
-<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:500" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500" rel="stylesheet"> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: 'IBM Plex Sans', sans-serif}
@@ -19,8 +19,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'IBM Plex Sans', sans-serif}
     </a>
 	
 <!-- Champ recherche -->
-    <h6>Searching for :
-    <input class="w3-input w3-black w3-hover-grey" type="text" id="searchInput"></h6>
+    <h6><input class="w3-input w3-black w3-hover-grey" type="text" id="searchInput" placeholder="Band search"></h6>
   </div>
     
  <!-- Menu déroulant -->
@@ -132,11 +131,12 @@ function myFunction(id) {
     <div class="w3-modal-content">
       <header class="w3-container w3-black"> 
         <span onclick="document.getElementById('modal01').style.display='none'" 
-        class="w3-button w3-xlarge w3-display-topright">&times;</span>
-		<h3>Akercocke</h1>
-        <img src="images/Akercocke.png" style="width:100%" class="">
+        class="w3-button w3-large w3-display-topright">&times;</span>
+<br><br>
+        <img src="images/Akercocke.png" style="width:100%">
       </header>
-      <div class="w3-container w3-black">
+      <div class="w3-container w3-black w3-descriptionlogo"><br>
+		<p>Akercocke</p>
         <p>Genre : Progressive / Black Metal / Death metal</p>
         <p>Lyrical themes : Satanism, Faust, Sex</p>
 		<p>Vox-ATypI classification : Garalde</p>
