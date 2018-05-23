@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<title>BLACK METAL LOGO DATABASE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:500" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: 'IBM Plex Sans', sans-serif}
+</style>
+<body class="w3-black w3-content" style="max-width:96%;">
+
+<!-- Début menu -->
+<nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:200px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-display-topright w3-large w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+	
+<!-- Champ recherche -->
+    <h6>Searching for :
+    <input class="w3-input w3-black w3-hover-grey" type="text"></h6>
+  </div>
+  
+ <!-- Menu déroulant -->
+  <div class="w3-bar-block">
+    <p><a onclick="myFunction('genre')" class="w3-bar-item w3-button w3-padding">Genres</a> 
+	<div id="genre" class="w3-container w3-hide">
+	<ul class="w3-ul">
+		<li class="w3-padding-small"><span class="w3-hash">atmospheric</span></li>
+		<li class="w3-padding-small">avant-garde</li>
+		<li class="w3-padding-small">death metal</li>
+		<li class="w3-padding-small">thrash metal</li>
+		<li class="w3-padding-small">death metal</li>
+		<li class="w3-padding-small">dark ambient</li>
+		<li class="w3-padding-small">doom metal</li>
+		<li class="w3-padding-small">symphonic</li>
+	</ul>
+	</div>
+	</p>
+    <p><a onclick="myFunction('lyrical')" class="w3-bar-item w3-button w3-padding">Lyrical themes</a> 
+	</p>
+    <p><a onclick="myFunction('vox')" class="w3-bar-item w3-button w3-padding">Vox-ATypI</a>
+	</p>
+  </div>
+  
+
+<!-- Script du menu déroulant -->
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:270px">
+
+  <!-- Header / texte d'intro fermable -->
+  <header id="intro">
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container w3-padding-32">
+    <h1><span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-jumbo w3-display-topright">&times;</span><b class="w3-wide">BLACK METAL LOGO DATABASE</b> is a collaborative website which classified by #tags the typographic composition of logos from black metal music bands. We consider the genre, the Vox-Atypi classification, the typeface use, the composition, the ornaments and the symbols used in theses logos.<br />Our database is actually composed of 100 logos from black metal bands. You can help us by submitting some black metal logos, and we add and classify them on our database.<br /> Fill in the form here !</h1>
+<br>	
+
+<!-- Grille d'images -->  
+  <div class="w3-row">
+  <div class="grid-sizer"></div>
+  <div class="grid-item" ><img src="images/Akercocke.png" style="width:100%" onclick="document.getElementById('modal01').style.display='block'"  class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Amesoeurs.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Aosoth.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Batushka.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Behemot.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Burzum.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Cobalt.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Cradle Of Filth.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Deafheaven.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Deluge.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Deuil.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Dissection.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Dornenreich.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Drudkh.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Einherjer.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/ForestSilence.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Gorgoroth.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Graveworm.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Harakiri For The Sky.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Hate Forest.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Misþyrming.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Otargos.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Portal.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Primordial.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Samael.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Satyricon.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Scars Of Chaos.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/Terra Tenebrosa.png" style="width:100%" class="w3-hover-opacity"></div>
+  <div class="grid-item"><img src="images/The Great Old Ones.png" style="width:100%" class="w3-hover-opacity"></div>
+</div>
+
+
+<div id="modal01" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('modal01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Modal Header</h2>
+      </header>
+      <div class="w3-container">
+        <p>Some text..</p>
+        <p>Some text..</p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Modal Footer</p>
+      </footer>
+    </div>
+  </div>
+  
+  
+  <div class="w3-container">
+  <h2>W3.CSS Modal</h2>
+  <p>Use w3-container classes to create different sections in the modal (e.g. header & footer).</p>
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Modal Header</h2>
+      </header>
+      <div class="w3-container">
+        <p>Some text..</p>
+        <p>Some text..</p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Modal Footer</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<!-- Modale avec infos logos -->
+
+<script src='js/jquery.min.js'></script>
+<script src='js/isotope.pkgd.js'></script>
+<script src='http://npmcdn.com/imagesloaded@4/imagesloaded.pkgd.js'></script>
+<script src="js/index.js"></script>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+</body>
+</html>
