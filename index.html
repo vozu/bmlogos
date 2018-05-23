@@ -20,9 +20,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'IBM Plex Sans', sans-serif}
 	
 <!-- Champ recherche -->
     <h6>Searching for :
-    <input class="w3-input w3-black w3-hover-grey" type="text"></h6>
+    <input class="w3-input w3-black w3-hover-grey" type="text" id="searchInput"></h6>
   </div>
-  
+    
  <!-- Menu déroulant -->
   <div class="w3-bar-block">
     <p><a onclick="myFunction('genre')" class="w3-bar-item w3-button w3-padding">Genres</a> 
@@ -94,7 +94,7 @@ function myFunction(id) {
 <br>	
 
 <!-- Grille d'images -->  
-  <div class="w3-row">
+  <div class="w3-row" id="logoGrid">
   <div class="grid-sizer"></div>
   <div class="grid-item" onclick="document.getElementById('modal01').style.display='block'"><img src="images/Akercocke.png" style="width:100%" class="w3-hover-opacity w3-cursor"><span class="w3-display-middle w3-xlarge w3-cursor w3-textsurimage">Akercocke</span></div>
   <div class="grid-item"><img src="images/Amesoeurs.png" style="width:100%" class="w3-hover-opacity w3-cursor"><span class="w3-display-middle w3-xlarge w3-cursor w3-textsurimage">Amesoeurs</span></div>
