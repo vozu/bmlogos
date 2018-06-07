@@ -114,12 +114,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'whoismono', sans-serif}
 <br>	
 
 <!-- Grille d'images -->  
-  <div class="w3-row" id="logoGrid">
-  <div class="grid-sizer"></div>
+  <div class="w3-row isotopelaunch" id="logoGrid"></div>
   
- </div>
- <div id="ficheLogo">
- </div>
+<!-- Fiche logo -->
+ <div class="w3-row" id="ficheLogo"></div>
  
 <!-- Fenêtre modale avec les infos -->
 <div id="modal01" class="w3-modal">
