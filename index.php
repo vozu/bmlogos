@@ -119,33 +119,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'whoismono', sans-serif}
 <!-- Fiche logo -->
  <div class="w3-row" id="ficheLogo"></div>
  
-<!-- Fenêtre modale avec les infos -->
-<div id="modal01" class="w3-modal">
-    <div class="w3-modal-content">
-      <header class="w3-container w3-black"> 
-        <span onclick="document.getElementById('modal01').style.display='none'" class="w3-button w3-large w3-display-topright">X</span>
-<br><br>
-        <img src="images/Akercocke.png" style="width:100%">
-      </header>
-      <div class="w3-container w3-black w3-descriptionlogo"><br>
-		<p>Akercocke</p>
-        <p>Genre : Progressive / Black Metal / Death metal</p>
-        <p>Lyrical themes : Satanism, Faust, Sex</p>
-		<p>Vox-ATypI classification : Garalde</p>
-		<p>Typeface use : Upper-case, Medium</p>
-		<p>Atmosphere : Industrial</p>
-		<p>Composition : One line</p>
-		<p>Ornament : No ornament</p>
-		<p>Symbol : No symbol</p>
-      </div>
-    </div>
-  </div>
+ 
+<!-- Fin du corps -->
 </div>
+
 <!-- Insertion des fichiers JS pour la grille modulable -->
 <script src='js/jquery.min.js'></script>
 <script src='js/isotope.pkgd.js'></script>
 <script src='http://npmcdn.com/imagesloaded@4/imagesloaded.pkgd.js'></script>
 <script src="js/index.js"></script>
+
 <!-- scripts customs -->
 <?php
 require_once("js/index_js.php");
