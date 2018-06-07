@@ -11,7 +11,7 @@ require_once("php/connexion_bdd.php");
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: 'whoismono', sans-serif}
 </style>
-<body class="w3-black w3-content" style="max-width:90%;">
+<body class="w3-black w3-content" style="max-width:100%;">
 
 <!-- Début menu -->
 <nav class="w3-sidebar w3-collapse w3-black w3-padding-16" style="z-index:3;width:200px;" id="mySidebar">
@@ -98,19 +98,20 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'whoismono', sans-serif}
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !DEBUT PAGE PRINCIPALE! -->
-<div class="w3-main" style="margin-left:270px">
+<div class="w3-main" style="margin-left:270px;" >
 
   <!-- Header / texte d'intro fermable -->
   <header id="intro">
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
-    <div class="w3-jumbo">
+    <div class="w3-jumbo" style="max-width:90%;">
   <p>BLACK METAL LOGO DATABASE is a collaborative website which classifies by #tags the typographic composition of logos from black metal music bands.</p>
   <p>We consider the genre, the Vox-Atypi classification, the typeface use, the composition, the ornaments and the symbols used in theses logos.</p>
   <p>Our database is actually composed of 100 logos from black metal bands. You can help us by submitting some black metal logos, and we add and classify them on our database.</p>
   <p>Fill in the form here !</p>
   <span onclick="this.parentElement.style.display='none'" class="w3-button w3-jumbo w3-display-topright">x</span>
-  </div>
+</div>
+
 <br>	
 
 <!-- Grille d'images -->  
