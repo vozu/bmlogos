@@ -29,7 +29,7 @@ var content = '<div class="grid-sizer"></div>';
 // var contenuFiche = '';
 
 for(var i = 0; i < data_json.length; i++){ 
-  content += '<div class="grid-item logo" data-fiche="'+data_json[i].nomimage+'_fiche" id="'+data_json[i].nomimage+'_grille"><img src="images/'+data_json[i].nomimage+'.png" style="width:100%"></div>'; // Le logo
+  content += '<div class="grid-item logo" data-fiche="'+data_json[i].nomimage+'_fiche" id="'+data_json[i].nomimage+'_grille" name="'+i+'"><img src="images/'+data_json[i].nomimage+'.png" style="width:100%"></div>'; // Le logo
 	// contenuFiche += '<div class="w3-row" id="'+data_json[i].nomimage+'_fiche" style="display:none;">'+data_json[i].band+'</div>'; // La fiche
 }
 
@@ -40,7 +40,11 @@ $('#logoGrid').append(content);
 
 $('#logoGrid').on('click','.logo', function(){ 
   $('#logoGrid').attr('style','display:none;'); // la grille de logo est bien masquée
-  $('#ficheLogo').attr('style',''); // ne marche pas
+  $('#ficheLogo').attr('style','display:inline-block;'); // affichage fiche
+
+  var i = $(this).attr('name'); // récupération de l'id
+  $('#ficheLogo').append('<div class="w3-row" id="'+data_json[i].nomimage+'_fiche">'+data_json[i].band+'<img src="images/'+data_json[i].nomimage+'.png" style="width:100%"></div>');
+
 });
 
 // J'ai l'impression que l'on ne peut pas toucher au display des éléments contenus dans la boucle. Parce que ça fonctionne parfaitement sur les autres éléments.

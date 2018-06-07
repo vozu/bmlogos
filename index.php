@@ -98,7 +98,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'whoismono', sans-serif}
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !DEBUT PAGE PRINCIPALE! -->
-<div class="w3-main" style="margin-left:270px;" >
+<div class="w3-main" style="margin-left:210px;" >
 
   <!-- Header / texte d'intro fermable -->
   <header id="intro">
@@ -110,20 +110,22 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'whoismono', sans-serif}
   <p>Our database is actually composed of 100 logos from black metal bands. You can help us by submitting some black metal logos, and we add and classify them on our database.</p>
   <p>Fill in the form here !</p>
   <span onclick="this.parentElement.style.display='none'" class="w3-button w3-jumbo w3-display-topright">x</span>
-</div>
+  </header>
 
 <br>	
 
 <!-- Grille d'images -->  
-  <div class="w3-row isotopelaunch" id="logoGrid"></div>
+<div class="w3-row isotopelaunch" id="logoGrid"></div>
   
 <!-- Fiche logo -->
- <div class="w3-row" id="ficheLogo"></div>
+<div class="w3-row" id="ficheLogo" style="display:none;"></div>
  
  
 <!-- Fin du corps -->
 </div>
 
+
+</body>
 <!-- Insertion des fichiers JS pour la grille modulable -->
 <script src='js/jquery.min.js'></script>
 <script src='js/isotope.pkgd.js'></script>
@@ -148,5 +150,4 @@ function w3_close() {
     document.getElementById("myOverlay").style.display = "none";
 }
 </script>
-</body>
 </html>
